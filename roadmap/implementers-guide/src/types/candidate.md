@@ -161,7 +161,7 @@ struct TransientValidationData {
 	/// vector is sorted ascending by the para id and doesn't contain multiple entries with the same
 	/// sender. This informs the collator.
 	hrmp_mqc_heads: Vec<(ParaId, Hash)>,
-	/// A vector that enumerates the list of blocks in which there were at least one message was
+	/// A vector that enumerates the list of blocks in which there was at least one message
 	/// received. The first number is always after the watermark.
 	hrmp_digest: Vec<BlockNumber>,
 	/// The watermark of the HRMP. That is, the block number up to which (inclusive) all HRMP messages
